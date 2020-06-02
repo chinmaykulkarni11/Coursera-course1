@@ -2,9 +2,28 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Hello World!</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>My first Angularjs app</title>
   </head>
-  <body>
-    <h1>Hello Coursera i am thrilled about this course !!!</h1>
+  <style media="screen">
+    body{font-size: 2em;font-family: cursive;color: red}
+  </style>
+  <body  ng-app="myfirstapp">
+    <h1>My first Angularjs App</h1>
+    <div ng-controller="myfirstcontroller">
+    <div>
+
+    Your name:
+      <input type="text"
+      ng-model="name"
+      ng-keyup="displayno()">
+      <br>
+      inside my js = {{name}}
+    </div>
+    <div>
+      Total numeric value of person's name:{{totalval}}
+    </div>
+</div>
   </body>
 </html>
