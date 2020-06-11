@@ -65,7 +65,7 @@ ctrl.remove = function(index) {
     }
     return $http({
      method: "GET",
-     url: "http://davids-restaurant.herokuapp.com/menu_items.json"
+     url: "https://davids-restaurant.herokuapp.com/menu_items.json"
    }).then(function (response) {
      var items=response.data.menu_items;
 
