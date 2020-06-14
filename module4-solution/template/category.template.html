@@ -1,0 +1,7 @@
+<div Restaurantcontroller as categories>
+  <ul>
+    <li ng-repeat="item in $ctrl.items">
+      <a ui-sref="details({categoryId: item.short_name})" href>{{item.name}}</a>
+    </li>
+  </ul>
+<!-- ui-sref="itemDetail({itemId: $index})" -->
