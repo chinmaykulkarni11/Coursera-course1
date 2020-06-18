@@ -1,0 +1,22 @@
+<div class="container">
+
+  <div ng-if="info.user === undefined">
+    Not Signed Up Yet. <a ui-sref="public.signup" href=""> Sign up Now! </a>
+  </div>
+
+  <div  ng-if="info.user != undefined">
+    Name :<br>
+    <u><b>{{info.user.firstname}}{{info.user.lastname}}</b></u>
+    <br>
+    Email:<br>
+    <u><b>{{info.user.email}}</b></u>
+    <br>
+    Phone:<br>
+   <u><b>{{info.user.phone}}</b></u>
+   <br>
+    Favourite:<br>
+    <menu-item menu-item="info.user.favouriteMenuItem"></menu-item>
+    <br>
+  </div>
+
+</div>
